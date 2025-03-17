@@ -21,6 +21,103 @@
  *
  * Seguro que al revisar detenidamente las posibilidades has descubierto algo nuevo.
  */
+---------------------------
+ Operadores en Python
+---------------------------
+
+# Operadores aritméticos
+a = 10
+b = 3
+
+print("Suma:", a + b)  # 13
+print("Resta:", a - b)  # 7
+print("Multiplicación:", a * b)  # 30
+print("División:", a / b)  # 3.333...
+print("División entera:", a // b)  # 3
+print("Módulo:", a % b)  # 1
+print("Exponente:", a ** b)  # 1000
+
+# Operadores de comparación
+print("¿a es mayor que b?", a > b)  # True
+print("¿a es igual a b?", a == b)  # False
+
+# Operadores lógicos
+x = True
+y = False
+
+print("AND lógico:", x and y)  # False
+print("OR lógico:", x or y)  # True
+print("NOT lógico:", not x)  # False
+
+# Operadores de asignación
+c = 5
+c += 2  # Equivalente a c = c + 2
+print("Operador de asignación (+=):", c)  # 7
+
+# Operadores de identidad
+d = [1, 2, 3]
+e = [1, 2, 3]
+f = d
+
+print("¿d y e son el mismo objeto?", d is e)  # False (listas diferentes)
+print("¿d y f son el mismo objeto?", d is f)  # True (referencian lo mismo)
+
+# Operadores de pertenencia
+print("¿2 está en d?", 2 in d)  # True
+print("¿5 no está en d?", 5 not in d)  # True
+
+# Operadores a nivel de bits
+num1 = 5  # 0b101
+num2 = 3  # 0b011
+
+print("AND bit a bit:", num1 & num2)  # 1 (0b001)
+print("OR bit a bit:", num1 | num2)  # 7 (0b111)
+print("XOR bit a bit:", num1 ^ num2)  # 6 (0b110)
+print("Desplazamiento a la izquierda:", num1 << 1)  # 10 (0b1010)
+print("Desplazamiento a la derecha:", num1 >> 1)  # 2 (0b10)
+
+---------------------------
+ Estructuras de control
+---------------------------
+
+# Condicionales
+edad = 18
+
+if edad >= 18:
+    print("Eres mayor de edad")
+elif edad > 12:
+    print("Eres un adolescente")
+else:
+    print("Eres un niño")
+
+# Bucle for (iterando sobre una lista)
+frutas = ["manzana", "banana", "cereza"]
+for fruta in frutas:
+    print("Me gusta la", fruta)
+
+# Bucle while
+contador = 3
+while contador > 0:
+    print("Contando:", contador)
+    contador -= 1
+
+# Manejo de excepciones
+try:
+    resultado = 10 / 0  # Esto genera un error
+except ZeroDivisionError:
+    print("Error: División por cero no permitida")
+finally:
+    print("Fin del manejo de excepciones")
+
+---------------------------
+ DIFICULTAD EXTRA
+---------------------------
+print("\nNúmeros entre 10 y 55 que cumplen la condición:")
+
+for num in range(10, 56):
+    if num % 2 == 0 and num != 16 and num % 3 != 0:
+        print(num, end=" ")
+
 ```
 #### Tienes toda la información extendida sobre el roadmap de retos de programación en **[retosdeprogramacion.com/roadmap](https://retosdeprogramacion.com/roadmap)**.
 
